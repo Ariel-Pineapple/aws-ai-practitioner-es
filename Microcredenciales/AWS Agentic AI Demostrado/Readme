@@ -1,1 +1,103 @@
+# AWS Agentic AI – Learning Lab
 
+Laboratorio personal de aprendizaje orientado al desarrollo, despliegue,
+seguridad y operación de sistemas de IA agéntica utilizando servicios de AWS.
+
+Este módulo sirve como preparación práctica para la microcredencial
+**AWS Agentic AI Demostrado**, pero su objetivo principal es comprender
+cómo diseñar arquitecturas de agentes de IA en AWS.
+
+---
+
+## 🎯 Objetivos
+
+Al finalizar estas prácticas debería ser capaz de:
+
+- Explicar qué diferencia a un agente de IA de una aplicación tradicional con LLM.
+- Comprender la arquitectura de Amazon Bedrock AgentCore.
+- Implementar componentes de ejecución para agentes.
+- Aplicar controles de seguridad mediante Amazon Bedrock Guardrails.
+- Gestionar autenticación y autorización con Amazon Cognito.
+- Integrar lógica de negocio mediante AWS Lambda.
+- Utilizar Amazon OpenSearch Service para recuperación y búsqueda.
+- Diagnosticar errores de configuración, permisos e integración.
+- Diseñar arquitecturas seguras para aplicaciones de IA agéntica.
+
+---
+
+## 🧠 Servicios principales
+
+| Servicio | Función |
+|---|---|
+| Amazon Bedrock AgentCore | Infraestructura para desplegar y operar agentes de IA |
+| Amazon Bedrock Guardrails | Controles y políticas sobre entradas y respuestas |
+| Amazon Cognito | Identidad y autenticación |
+| AWS Lambda | Ejecución de lógica y herramientas |
+| Amazon OpenSearch Service | Búsqueda y recuperación de información |
+| AWS IAM | Autorización entre servicios |
+| Amazon CloudWatch | Logs, métricas y observabilidad |
+
+---
+
+## 🏗 Arquitectura conceptual
+
+Usuario
+   ↓
+Amazon Cognito
+   ↓
+Aplicación / API
+   ↓
+Amazon Bedrock AgentCore
+   ↓
+Agente
+   ├── Foundation Model
+   ├── Guardrails
+   ├── Tools
+   │     └── AWS Lambda
+   │
+   └── Knowledge / Search
+         └── Amazon OpenSearch Service
+
+---
+
+## 🧪 Ruta de prácticas
+
+### Lab 01 — Primer agente
+Objetivo: comprender el ciclo básico de ejecución de un agente.
+
+### Lab 02 — AgentCore
+Objetivo: desplegar y operar un agente mediante Amazon Bedrock AgentCore.
+
+### Lab 03 — Seguridad con Guardrails
+Objetivo: establecer restricciones sobre entradas y respuestas del modelo.
+
+### Lab 04 — Identidad con Cognito
+Objetivo: autenticar usuarios y controlar acceso a la aplicación.
+
+### Lab 05 — Tools con Lambda
+Objetivo: permitir que el agente ejecute acciones mediante funciones.
+
+### Lab 06 — Recuperación con OpenSearch
+Objetivo: permitir que el agente consulte información externa.
+
+### Lab 07 — Integración
+Objetivo: construir una arquitectura completa combinando los componentes anteriores.
+
+---
+
+## 📝 Metodología
+
+Cada laboratorio documentará:
+
+1. Problema
+2. Arquitectura
+3. Servicios utilizados
+4. Configuración
+5. IAM y permisos
+6. Implementación
+7. Pruebas
+8. Errores encontrados
+9. Troubleshooting
+10. Costos
+11. Limpieza de recursos
+12. Lecciones aprendidas
