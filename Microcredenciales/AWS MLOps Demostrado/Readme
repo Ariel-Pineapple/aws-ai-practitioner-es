@@ -1,0 +1,119 @@
+# AWS MLOps – Learning Lab
+
+Laboratorio personal para aprender el despliegue, integración,
+monitorización y operación de modelos de machine learning en AWS.
+
+Este módulo sirve como preparación práctica para la microcredencial
+**AWS MLOps Demostrado**.
+
+---
+
+## 🎯 Objetivos
+
+Al finalizar estas prácticas debería ser capaz de:
+
+- Navegar Amazon SageMaker AI y SageMaker Studio.
+- Utilizar modelos disponibles mediante SageMaker JumpStart.
+- Desplegar modelos mediante endpoints.
+- Comprender el uso de imágenes de contenedor para inferencia.
+- Trabajar con Amazon Elastic Container Registry.
+- Integrar endpoints con AWS Lambda.
+- Publicar servicios mediante Amazon API Gateway.
+- Monitorizar soluciones mediante Amazon CloudWatch.
+- Configurar permisos IAM entre los componentes.
+- Diagnosticar errores de despliegue e inferencia.
+
+---
+
+## 🧠 Servicios principales
+
+| Servicio | Función |
+|---|---|
+| Amazon SageMaker AI | Plataforma administrada de ML |
+| SageMaker Studio | Entorno de desarrollo de ML |
+| SageMaker JumpStart | Modelos y soluciones preentrenadas |
+| Amazon ECR | Registro de imágenes de contenedores |
+| AWS Lambda | Capa de integración |
+| Amazon API Gateway | Exposición del modelo mediante API |
+| Amazon CloudWatch | Logs, métricas y monitorización |
+| AWS IAM | Control de acceso |
+
+---
+
+## 🏗 Arquitectura conceptual
+
+Cliente
+   ↓
+Amazon API Gateway
+   ↓
+AWS Lambda
+   ↓
+SageMaker Endpoint
+   ↓
+Foundation Model
+   ↑
+SageMaker JumpStart
+
+Infraestructura adicional:
+
+Amazon ECR
+   ↓
+Container Image
+   ↓
+SageMaker
+
+Observabilidad:
+
+SageMaker
+Lambda
+API Gateway
+    ↓
+Amazon CloudWatch
+
+---
+
+## 🧪 Ruta de prácticas
+
+### Lab 01 — SageMaker Studio
+Explorar el entorno y comprender sus componentes.
+
+### Lab 02 — SageMaker JumpStart
+Seleccionar y analizar un modelo preentrenado.
+
+### Lab 03 — Deploy
+Desplegar el modelo como endpoint.
+
+### Lab 04 — Inferencia
+Enviar solicitudes al endpoint y analizar respuestas.
+
+### Lab 05 — Lambda
+Invocar el endpoint desde una función Lambda.
+
+### Lab 06 — API Gateway
+Publicar la inferencia mediante una API.
+
+### Lab 07 — CloudWatch
+Analizar logs, errores, latencia y comportamiento.
+
+### Lab 08 — Arquitectura completa
+Construir un servicio de inferencia end-to-end.
+
+---
+
+## 📝 Metodología
+
+Cada práctica documentará:
+
+1. Problema
+2. Arquitectura
+3. Servicios AWS
+4. Recursos creados
+5. IAM
+6. Configuración
+7. Implementación
+8. Pruebas
+9. Observabilidad
+10. Troubleshooting
+11. Costos
+12. Limpieza de recursos
+13. Lecciones aprendidas
